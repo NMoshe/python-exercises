@@ -2,9 +2,14 @@
 
 import time
 import subprocess
+import sys
 
 print('How long should the countdown be?\nEnter the length in seconds:')
-timeLeft = int(input())
+try:
+    timeLeft = int(input())
+except ValueError:
+    print('Please enter a valid number.')
+    sys.exit()
 while timeLeft > 0:
     print(str(timeLeft))
     time.sleep(1)
