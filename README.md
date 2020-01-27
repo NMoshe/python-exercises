@@ -1,0 +1,1 @@
+Various exercises completed while reading through Automate the Boring Stuff With Python
